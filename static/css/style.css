@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+
+:root {
+    --main-white-color: #f2f2f2;
+    --main-black-color: black;
+    --main-red-color: #fc1703;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font: 16px/1.5 "Dosis", sans-serif;
+
+}
+
+/* CONTENEDOR
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+    .wrapper > * {
+        padding: 20px;
+    }
+
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+    background: var(--main-white-color);
+}
+#logo_text h2 a .logo_colour {
+    color: #FA057E;
+}
+
+#logo_text h2 a .logo_colour2 {
+    color: #27AE60;
+}
+
+#logo_text h2 a .logo_colour3 {
+    color: #C0392B;
+}
+
+#logo_text h2 a .logo_colour4 {
+    color: #F4D03F;
+}
+
+#logo_text h2 a .logo_colour5 {
+    color: #2980B9;
+}
+
+#logo_text h2 a .logo_colour6 {
+    color: #E67E22;
+}
+
+
+    .page-header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page-header ul {
+        display: flex;
+        order: 1;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+        .page-header ul li:not(:last-child) {
+            padding-right: 15px;
+        }
+
+    .page-header .cta-up {
+        font-family: inherit;
+        font-size: 1.2rem;
+        padding: 5px 18px;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+
+#logo_text h2 a .logo_colour {
+    color: #FA057E;
+}
+
+#logo_text h2 a .logo_colour2 {
+    color: #27AE60;
+}
+
+#logo_text h2 a .logo_colour3 {
+    color: #C0392B;
+}
+
+#logo_text h2 a .logo_colour4 {
+    color: #F4D03F;
+}
+
+#logo_text h2 a .logo_colour5 {
+    color: #2980B9;
+}
+
+#logo_text h2 a .logo_colour6 {
+    color: #E67E22;
+}
+
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 350px;
+    background: var(--main-red-color) url(https://i.imgur.com/S0mL615.jpg) no-repeat center / cover;
+    background-blend-mode: luminosity;
+    color: var(--main-white-color);
+}
+
+    .page-main div {
+        max-width: 500px;
+    }
+
+    .page-main h1 {
+        margin-bottom: 20px;
+    }
+
+    .page-main p + p {
+        margin-top: 10px;
+    }
+
+#content {
+    text-align: left;
+    float: left;
+    width: 595px;
+    padding: 0;
+}
+
+.page-main {
+    border-collapse: collapse;
+}
+
+    table th, table thead tr {
+        background: #ccc;
+        font-weight: bold;
+    }
+
+    table tr td:first-child {
+        font-weight: bold;
+    }
+
+    table tr td {
+        background-color: transparent;
+    }
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    background: var(--main-white-color);
+}
+
+    .page-footer ul {
+        display: flex;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+        .page-footer ul li:not(:last-child) {
+            margin-right: 20px;
+        }
+
+.carousel-caption {
+    padding: 20px;
+    background-color: rgb(26,108,181);
+    background-color: rgba(26,108,181,0.7);
+    color: #fff;
+    text-shadow: 0 -1px 0 #1a6cb5;
+}
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px) {
+    .page-header ul {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .page-header .cta-up {
+        order: 1;
+    }
+
+    .page-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .page-footer ul {
+            margin-bottom: 0;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .page-main {
+        padding-left: 90px;
+    }
+}

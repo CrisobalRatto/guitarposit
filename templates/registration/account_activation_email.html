@@ -1,0 +1,7 @@
+{% autoescape off %}
+Hi {{ user.username }},
+
+Presione click en el link de abajo para confirmar:
+
+http://{{ domain }}{% url 'profiles:activate' uidb64=uid token=token %}
+{% endautoescape %}
